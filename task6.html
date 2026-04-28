@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    button { padding: 10px; cursor: pointer; }
+    .active { color: #ff00ff; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<p id="text">De vi grosi hranite</p>
+<button id="myBtn">Click</button>
+
+<script>
+  const btn = document.getElementById('myBtn');
+  const text = document.getElementById('text');
+
+  btn.addEventListener('click', () => {
+    text.textContent = "V tumbachke";
+    
+    text.classList.toggle('active');
+    
+    console.log('Button was clicked');
+  });
+</script>
+
+</body>
+</html>
