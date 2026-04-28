@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button>Показати/Сховати</button>
+<p id="text">Я текст</p>
+<p>Інший текст</p>
+
+<script>
+  const btn = document.querySelector('button');
+  const targetText = document.getElementById('text');
+
+  btn.addEventListener('click', () => {
+    if (targetText.style.display === 'none') {
+      targetText.style.display = 'block';
+    } else {
+      targetText.style.display = 'none';
+    }
+    
+    console.log('Text changed');
+  });
+</script>
+
+</body>
+</html>
